@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>요리조리 — 쉐프 스프라이트 (온보딩 / 성공)</title>
+  <style>
+    :root {
+      --cell: 256px;
+      --h: 280px;
+      --onboard-strip: 1024px;
+      --success-strip: 512px;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 24px;
+      background: #f2f2f7;
+      color: #1c1c1e;
+    }
+    h1 { font-size: 1.1rem; margin: 0 0 8px; }
+    p.meta { font-size: 12px; color: #8e8e93; margin: 0 0 24px; max-width: 42rem; line-height: 1.45; }
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    h2 { font-size: 14px; margin: 0 0 12px; font-weight: 600; }
+    .sprite-window {
+      width: var(--cell);
+      height: var(--h);
+      overflow: hidden;
+      border-radius: 12px;
+      background: #fafafa;
+      outline: 1px solid #e5e5ea;
+    }
+    .sprite-strip {
+      height: var(--h);
+      background-repeat: no-repeat;
+      will-change: transform;
+    }
+    /* image.png 상단 3·4번째 + 하단 1·2번째 프레임을 가로로 이은 4컷 루프 */
+    .sprite-strip--onboard {
+      width: var(--onboard-strip);
+      background-image: url(assets/chef-mascot-onboarding-4strip.png);
+      background-size: var(--onboard-strip) var(--h);
+      /* 4프레임을 동일 시간으로 정지 표시 (진짜 스프라이트 느낌) */
+      animation: onboard-loop 1.2s infinite;
+    }
+    @keyframes onboard-loop {
+      0%, 22% { transform: translateX(0); }
+      25%, 47% { transform: translateX(-256px); }
+      50%, 72% { transform: translateX(-512px); }
+      75%, 100% { transform: translateX(-768px); }
+    }
+    /* 성공: idle(첫 컷) ↔ 기쁨(마지막 컷) 짧게 2번 정도 */
+    .sprite-strip--success {
+      width: var(--success-strip);
+      background-image: url(assets/chef-mascot-success-2strip.png);
+      background-size: var(--success-strip) var(--h);
+      animation: success-twice 0.9s steps(2, end) 2;
+    }
+    @keyframes success-twice {
+      from { transform: translateX(0); }
+      to { transform: translateX(calc(-1 * var(--success-strip) / 2)); }
+    }
+    .toast-demo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 390px;
+      padding: 14px 16px;
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e5ea;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .toast-demo .sprite-window { flex-shrink: 0; width: 72px; height: 80px; }
+    .toast-demo .sprite-strip--success-mini {
+      width: 144px;
+      height: 80px;
+      background-image: url(assets/chef-mascot-success-2strip.png);
+      background-size: 144px 80px;
+      animation: success-mini 0.45s steps(2, end) 2;
+    }
+    @keyframes success-mini {
+      from { transform: translateX(0); }
+      to { transform: translateX(-72px); }
+    }
+    code { font-size: 11px; background: #f2f2f7; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>쉐프 마스코트 스프라이트</h1>
+  <p class="meta">
+    원본 <code>assets/image.png</code>(1024×559)에서 9프레임을 잘라 <code>chef-mascot-onboarding-4strip.png</code>(요리 동작 루프)와
+    <code>chef-mascot-success.png</code> / <code>chef-mascot-success-2strip.png</code>(기쁨·idle 교차)로 빌드했습니다.
+    브라우저에서 이 파일을 열면 애니메이션을 바로 확인할 수 있습니다.
+  </p>
+
+  <section>
+    <h2>첫 실행 온보딩 — 4컷 루프</h2>
+    <div class="sprite-window" aria-hidden="true">
+      <div class="sprite-strip sprite-strip--onboard"></div>
+    </div>
+    <p class="meta" style="margin-top:12px;margin-bottom:0;">
+      구현 시 온보딩 화면 중앙에 동일한 뷰포트(256×280)를 두고 <code>translateX</code> + <code>steps(4)</code> 로 재생하면 됩니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>저장 성공 — 토스트 + 짧은 2컷 스프라이트</h2>
+    <div class="toast-demo">
+      <div class="sprite-window" aria-hidden="true">
+        <div class="sprite-strip sprite-strip--success-mini"></div>
+      </div>
+      <div>
+        <div style="font-weight:600;font-size:17px;">저장했어요</div>
+        <div style="font-size:11px;color:#8e8e93;margin-top:4px;">0.9s 안에 2회 튀는 느낌으로 끝내기 좋음</div>
+      </div>
+    </div>
+    <p class="meta" style="margin-top:12px;margin-bottom:0;">
+      큰 프리뷰(256×280): <code>sprite-strip--success</code> 클래스를 아래 박스에 적용해 보세요.
+    </p>
+    <div class="sprite-window" style="margin-top:12px;" aria-hidden="true">
+      <div class="sprite-strip sprite-strip--success"></div>
+    </div>
+  </section>
+</body>
+</html>

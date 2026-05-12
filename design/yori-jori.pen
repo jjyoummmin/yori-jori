@@ -1,0 +1,1739 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "tokensPanel",
+      "x": 0,
+      "y": 0,
+      "name": "Design tokens",
+      "width": 300,
+      "height": 220,
+      "fill": "$color.surface",
+      "cornerRadius": 8,
+      "layout": "vertical",
+      "gap": 6,
+      "padding": 12,
+      "children": [
+        {
+          "type": "text",
+          "id": "tokTitle",
+          "fill": "$color.text",
+          "content": "토큰 / 타이포",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "tokLine1",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 260,
+          "content": "배경 $color.bg · 본문 $color.text · 보조 $color.textMuted",
+          "lineHeight": 1.35,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "tokLine2",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 260,
+          "content": "제목 28 · 월 16 · 본문 15 · 캡션 11 · 빈 날짜 숫자 14",
+          "lineHeight": 1.35,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 4,
+          "id": "tokThumb",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/reference-mood.png",
+            "mode": "fill"
+          },
+          "width": 120,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pwaNotesPanel",
+      "x": 320,
+      "y": 0,
+      "name": "PWA 구현 메모",
+      "width": 320,
+      "height": 220,
+      "fill": "$color.surface",
+      "cornerRadius": 8,
+      "layout": "vertical",
+      "gap": 8,
+      "padding": 12,
+      "children": [
+        {
+          "type": "text",
+          "id": "pwaTitle",
+          "fill": "$color.text",
+          "content": "PWA / 터치",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "pwaB1",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 290,
+          "content": "· 주요 탭/버튼 최소 높이 44pt (Apple HIG)",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "pwaB2",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 290,
+          "content": "· 하단 CTA는 safe-area-inset-bottom 만큼 패딩",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "pwaB3",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 290,
+          "content": "· 캘린더 셀 대표 사진 = 해당 일 첫 기록의 썸네일",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "pwaB4",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 290,
+          "content": "· 뱃지 숫자 = 같은 날 기록 개수 (>1일 때만 표시 권장)",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "pwaB5",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 290,
+          "content": "· manifest + maskable 아이콘, splash 별도 에셋",
+          "lineHeight": 1.4,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mascotPixelPanel",
+      "x": 640,
+      "y": 0,
+      "name": "픽셀 마스코트 (원작)",
+      "width": 360,
+      "height": 220,
+      "fill": "$color.surface",
+      "cornerRadius": 8,
+      "layout": "vertical",
+      "gap": 8,
+      "padding": 12,
+      "children": [
+        {
+          "type": "text",
+          "id": "mascotTitle",
+          "fill": "$color.text",
+          "content": "8bit / LCD 느낌 (원작 에셋)",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "mascotLine1",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 330,
+          "content": "Tamagotchi® 상표·공식 스프라이트 대신: yori-pet-sprites.png / .svg (4컷) + yori-pet-device.png / .svg — Pencil은 PNG 이미지 채우기 사용",
+          "lineHeight": 1.35,
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "mascotThumbs",
+          "width": "fill_container",
+          "height": "fit_content",
+          "layout": "horizontal",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "mascotStripThumb",
+              "cornerRadius": 4,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/yori-pet-sprites.png",
+                "mode": "fill"
+              },
+              "width": 200,
+              "height": 50
+            },
+            {
+              "type": "rectangle",
+              "id": "mascotDeviceThumb",
+              "cornerRadius": 4,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/yori-pet-device.png",
+                "mode": "fill"
+              },
+              "width": 48,
+              "height": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "flowStrip",
+      "x": 0,
+      "y": 240,
+      "name": "화면 흐름",
+      "width": 1280,
+      "height": 56,
+      "fill": "#FFFFFF",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5EA"
+      },
+      "gap": 16,
+      "padding": [
+        12,
+        16
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "flow1",
+          "fill": "$color.text",
+          "content": "① 캘린더에서 날짜 탭 → ② DayEntries",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "flow2",
+          "fill": "$color.textMuted",
+          "content": "③ + / 추가 → AddOrEditEntry → 저장 후 ②",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "flow3",
+          "fill": "$color.textMuted",
+          "content": "⓪ 첫 실행 온보딩(요리조리) → ① · 저장 직후 짧은 토스트(쉐프 스프라이트) — mascot-sprite-demo.html",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compCountBadge",
+      "x": 660,
+      "y": 40,
+      "name": "EntryCountBadge",
+      "reusable": true,
+      "width": 20,
+      "height": 20,
+      "fill": "$color.badge",
+      "cornerRadius": 10,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "countLabel",
+          "fill": "#FFFFFF",
+          "content": "3",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compGridPad",
+      "x": 660,
+      "y": 80,
+      "name": "GridPad (비해당 일)",
+      "reusable": true,
+      "width": 48,
+      "height": 72,
+      "fill": "$color.padCell",
+      "cornerRadius": 4
+    },
+    {
+      "type": "frame",
+      "id": "compWeekdayRow",
+      "x": 660,
+      "y": 170,
+      "name": "WeekdayRow",
+      "reusable": true,
+      "width": 360,
+      "height": 22,
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "wd0",
+          "fill": "$color.textMuted",
+          "content": "일",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd1",
+          "fill": "$color.textMuted",
+          "content": "월",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd2",
+          "fill": "$color.textMuted",
+          "content": "화",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd3",
+          "fill": "$color.textMuted",
+          "content": "수",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd4",
+          "fill": "$color.textMuted",
+          "content": "목",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd5",
+          "fill": "$color.textMuted",
+          "content": "금",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd6",
+          "fill": "$color.textMuted",
+          "content": "토",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compMonthNav",
+      "x": 660,
+      "y": 210,
+      "name": "MonthNav",
+      "reusable": true,
+      "width": 360,
+      "height": 36,
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "btnPrev",
+          "fill": "$color.textMuted",
+          "content": "<",
+          "fontFamily": "Inter",
+          "fontSize": 20,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "navMonthLabel",
+          "fill": "$color.text",
+          "content": "2026.5",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "btnNext",
+          "fill": "$color.textMuted",
+          "content": ">",
+          "fontFamily": "Inter",
+          "fontSize": 20,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compCalendarHeader",
+      "x": 660,
+      "y": 260,
+      "name": "CalendarHeader",
+      "reusable": true,
+      "width": 360,
+      "layout": "vertical",
+      "gap": 10,
+      "children": [
+        {
+          "type": "text",
+          "id": "calTitle",
+          "fill": "$color.text",
+          "content": "캘린더",
+          "fontFamily": "Inter",
+          "fontSize": "$text.title",
+          "fontWeight": "700"
+        },
+        {
+          "id": "hdrMonthNav",
+          "type": "ref",
+          "ref": "compMonthNav",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compDayCellEmpty",
+      "x": 660,
+      "y": 360,
+      "name": "DayCellEmpty",
+      "reusable": true,
+      "width": 48,
+      "height": 72,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "dayNum",
+          "fill": "$color.textDayEmpty",
+          "content": "12",
+          "fontFamily": "Inter",
+          "fontSize": "$text.dayNum",
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compDayCellPhoto",
+      "x": 660,
+      "y": 450,
+      "name": "DayCellPhoto",
+      "reusable": true,
+      "clip": true,
+      "width": 48,
+      "height": 72,
+      "cornerRadius": 4,
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": 4,
+          "id": "cellPhotoRect",
+          "x": 0,
+          "y": 0,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FFB347",
+                "position": 0
+              },
+              {
+                "color": "#E85D4C",
+                "position": 1
+              }
+            ]
+          },
+          "width": 48,
+          "height": 72
+        },
+        {
+          "id": "cellBadge",
+          "type": "ref",
+          "ref": "compCountBadge",
+          "x": 24,
+          "y": 4,
+          "layoutPosition": "absolute"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compDishListRow",
+      "x": 660,
+      "y": 540,
+      "name": "DishListRow",
+      "reusable": true,
+      "width": 360,
+      "height": 64,
+      "gap": 12,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": 8,
+          "id": "dishThumb",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#C8E6C9",
+                "position": 0
+              },
+              {
+                "color": "#81C784",
+                "position": 1
+              }
+            ]
+          },
+          "width": 48,
+          "height": 48
+        },
+        {
+          "type": "frame",
+          "id": "dishTextCol",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dishName",
+              "fill": "$color.text",
+              "content": "된장찌개",
+              "fontFamily": "Inter",
+              "fontSize": "$text.body",
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "dishNote",
+              "fill": "$color.textMuted",
+              "content": "배추 넣고 끓임",
+              "fontFamily": "Inter",
+              "fontSize": "$text.caption",
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compPrimaryButton",
+      "x": 660,
+      "y": 620,
+      "name": "PrimaryButton",
+      "reusable": true,
+      "width": 360,
+      "height": 48,
+      "fill": "#1C1C1E",
+      "cornerRadius": 12,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "btnLabel",
+          "fill": "#FFFFFF",
+          "content": "저장",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compTextField",
+      "x": 660,
+      "y": 680,
+      "name": "TextField",
+      "reusable": true,
+      "width": 360,
+      "layout": "vertical",
+      "gap": 6,
+      "children": [
+        {
+          "type": "text",
+          "id": "fieldLabel",
+          "fill": "$color.textMuted",
+          "content": "라벨",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "fieldBox",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "$color.surface",
+          "cornerRadius": 8,
+          "layout": "vertical",
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fieldPlaceholder",
+              "fill": "#C7C7CC",
+              "content": "입력…",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "compPhotoSlot",
+      "x": 660,
+      "y": 760,
+      "name": "PhotoSlot",
+      "reusable": true,
+      "width": 360,
+      "height": 168,
+      "fill": "#FAFAFA",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "thickness": 2,
+        "fill": "#D1D1D6"
+      },
+      "layout": "vertical",
+      "gap": 8,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "slotHint",
+          "fill": "$color.textMuted",
+          "content": "탭하여 요리 사진 추가",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "slotSub",
+          "fill": "#AEAEB2",
+          "textGrowth": "fixed-width",
+          "width": 300,
+          "content": "캘린더 셀에는 첫 사진이 대표로 표시됩니다",
+          "lineHeight": 1.35,
+          "textAlign": "center",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "screenCalendar",
+      "x": 0,
+      "y": 320,
+      "name": "CalendarMonth",
+      "width": 390,
+      "height": 844,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "gap": 8,
+      "padding": [
+        12,
+        15
+      ],
+      "children": [
+        {
+          "id": "calHeaderInst",
+          "type": "ref",
+          "ref": "compCalendarHeader",
+          "width": "fill_container"
+        },
+        {
+          "id": "weekInst",
+          "type": "ref",
+          "ref": "compWeekdayRow",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "calGrid",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "type": "frame",
+              "id": "row0",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r0p0",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r0p1",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r0p2",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r0p3",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r0p4",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r0d1",
+                  "type": "ref",
+                  "ref": "compDayCellPhoto",
+                  "descendants": {
+                    "cellBadge/countLabel": {
+                      "content": "2"
+                    }
+                  }
+                },
+                {
+                  "id": "r0d2",
+                  "type": "ref",
+                  "ref": "compDayCellPhoto",
+                  "descendants": {
+                    "cellPhotoRect": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/reference-mood.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "cellBadge": {
+                      "opacity": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "row1",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r1d3",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "3"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d4",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "4"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d5",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "5"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d6",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "6"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d7",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "7"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d8",
+                  "type": "ref",
+                  "ref": "compDayCellPhoto",
+                  "descendants": {
+                    "cellBadge/countLabel": {
+                      "content": "3"
+                    }
+                  }
+                },
+                {
+                  "id": "r1d9",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "9"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "row2",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r2d10",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "10"
+                    }
+                  }
+                },
+                {
+                  "id": "r2d11",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "11"
+                    }
+                  }
+                },
+                {
+                  "id": "r2d12",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "12"
+                    }
+                  }
+                },
+                {
+                  "id": "r2d13",
+                  "type": "ref",
+                  "ref": "compDayCellPhoto",
+                  "descendants": {
+                    "cellBadge": {
+                      "opacity": 0
+                    }
+                  }
+                },
+                {
+                  "id": "r2d14",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "14"
+                    }
+                  }
+                },
+                {
+                  "id": "r2d15",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "15"
+                    }
+                  }
+                },
+                {
+                  "id": "r2d16",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "16"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "row3",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r3d17",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "17"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d18",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "18"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d19",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "19"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d20",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "20"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d21",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "21"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d22",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "22"
+                    }
+                  }
+                },
+                {
+                  "id": "r3d23",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "23"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "row4",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r4d24",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "24"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d25",
+                  "type": "ref",
+                  "ref": "compDayCellPhoto",
+                  "descendants": {
+                    "cellPhotoRect": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 45,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#90CAF9",
+                            "position": 0
+                          },
+                          {
+                            "color": "#5C6BC0",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "cellBadge/countLabel": {
+                      "content": "2"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d26",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "26"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d27",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "27"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d28",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "28"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d29",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "29"
+                    }
+                  }
+                },
+                {
+                  "id": "r4d30",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "30"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "row5",
+              "width": "fill_container",
+              "gap": 4,
+              "children": [
+                {
+                  "id": "r5d31",
+                  "type": "ref",
+                  "ref": "compDayCellEmpty",
+                  "descendants": {
+                    "dayNum": {
+                      "content": "31"
+                    }
+                  }
+                },
+                {
+                  "id": "r5p1",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r5p2",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r5p3",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r5p4",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r5p5",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                },
+                {
+                  "id": "r5p6",
+                  "type": "ref",
+                  "ref": "compGridPad"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fabAdd",
+          "layoutPosition": "absolute",
+          "x": 308,
+          "y": 748,
+          "width": 56,
+          "height": 56,
+          "fill": "#1C1C1E",
+          "cornerRadius": 28,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000033",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 12
+          },
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fabPlus",
+              "fill": "#FFFFFF",
+              "content": "+",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "screenDayEntries",
+      "x": 420,
+      "y": 320,
+      "name": "DayEntries",
+      "width": 390,
+      "height": 844,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        12,
+        15
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "dayTopBar",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dayBack",
+              "fill": "$color.textMuted",
+              "content": "< 뒤로",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "dayTitle",
+              "fill": "$color.text",
+              "content": "5월 8일 금요일",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "dayAddText",
+              "fill": "#007AFF",
+              "content": "추가",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dayList",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "id": "dishRow1",
+              "type": "ref",
+              "ref": "compDishListRow",
+              "width": "fill_container",
+              "descendants": {
+                "dishName": {
+                  "content": "김치볶음밥"
+                },
+                "dishNote": {
+                  "content": "계란 후라이 올림"
+                }
+              }
+            },
+            {
+              "id": "dishRow2",
+              "type": "ref",
+              "ref": "compDishListRow",
+              "width": "fill_container",
+              "descendants": {
+                "dishThumb": {
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFCDD2",
+                        "position": 0
+                      },
+                      {
+                        "color": "#E57373",
+                        "position": 1
+                      }
+                    ]
+                  }
+                },
+                "dishName": {
+                  "content": "된장찌개"
+                },
+                "dishNote": {
+                  "content": "두부 추가"
+                }
+              }
+            },
+            {
+              "id": "dishRow3",
+              "type": "ref",
+              "ref": "compDishListRow",
+              "width": "fill_container",
+              "descendants": {
+                "dishThumb": {
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFF9C4",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FFD54F",
+                        "position": 1
+                      }
+                    ]
+                  }
+                },
+                "dishName": {
+                  "content": "계란말이"
+                },
+                "dishNote": {
+                  "content": "—"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "screenAddEntry",
+      "x": 840,
+      "y": 320,
+      "name": "AddOrEditEntry",
+      "width": 390,
+      "height": 844,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        12,
+        15
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "addTopBar",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "addCancel",
+              "fill": "$color.textMuted",
+              "content": "취소",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "addScreenTitle",
+              "fill": "$color.text",
+              "content": "요리 기록",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "addSpacer",
+              "width": 40,
+              "height": 8,
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "id": "addPhotoInst",
+          "type": "ref",
+          "ref": "compPhotoSlot",
+          "width": "fill_container"
+        },
+        {
+          "id": "fieldTitleInst",
+          "type": "ref",
+          "ref": "compTextField",
+          "width": "fill_container",
+          "descendants": {
+            "fieldLabel": {
+              "content": "요리 이름"
+            },
+            "fieldPlaceholder": {
+              "content": "예: 된장찌개"
+            }
+          }
+        },
+        {
+          "id": "fieldMemoInst",
+          "type": "ref",
+          "ref": "compTextField",
+          "width": "fill_container",
+          "justifyContent": "start",
+          "alignItems": "start",
+          "height": "fit_content",
+          "descendants": {
+            "fieldLabel": {
+              "content": "메모"
+            },
+            "fieldBox": {
+              "height": 250,
+              "justifyContent": "start",
+              "alignItems": "start",
+              "padding": [
+                10,
+                12
+              ]
+            },
+            "fieldPlaceholder": {
+              "content": "재료, 간, 팁…",
+              "enabled": true
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "addSpacerGrow",
+          "rotation": 0.04316385800525148,
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "none"
+        },
+        {
+          "id": "saveBtnInst",
+          "type": "ref",
+          "ref": "compPrimaryButton",
+          "width": "fill_container",
+          "descendants": {
+            "btnLabel": {
+              "content": "저장"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "screenOnboarding",
+      "x": 0,
+      "y": 1188,
+      "name": "온보딩 (첫 실행)",
+      "width": 390,
+      "height": 844,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        24,
+        28
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "onbTitle",
+          "fill": "$color.text",
+          "textGrowth": "fixed-width",
+          "width": 340,
+          "content": "요리조리에 온 걸 환영해요",
+          "lineHeight": 1.2,
+          "fontFamily": "Inter",
+          "fontSize": 26,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "onbBody",
+          "fill": "$color.textMuted",
+          "textGrowth": "fixed-width",
+          "width": 340,
+          "content": "날짜를 탭해 그날 먹은 요리를 사진과 함께 남겨 보세요. 첫 기록을 저장하면 캘린더에 바로 보여요.",
+          "lineHeight": 1.45,
+          "fontFamily": "Inter",
+          "fontSize": 15,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "onbMascotBlock",
+          "width": "fill_container",
+          "height": "fit_content",
+          "layout": "vertical",
+          "gap": 10,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "onbMascotStill",
+              "cornerRadius": 12,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/chef-mascot-idle.png",
+                "mode": "fit"
+              },
+              "width": 220,
+              "height": 240
+            },
+            {
+              "type": "text",
+              "id": "onbSpriteNote",
+              "fill": "$color.textMuted",
+              "textGrowth": "fixed-width",
+              "width": 320,
+              "content": "애니메이션: image.png에서 자른 4컷 루프(팬·지글·김) → assets/chef-mascot-onboarding-4strip.png. 구현은 design/mascot-sprite-demo.html 참고.",
+              "lineHeight": 1.35,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "onbCtaInst",
+          "type": "ref",
+          "ref": "compPrimaryButton",
+          "width": "fill_container",
+          "descendants": {
+            "btnLabel": {
+              "content": "시작하기"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "screenSuccessToast",
+      "x": 420,
+      "y": 1188,
+      "name": "저장 성공 피드백",
+      "width": 390,
+      "height": 140,
+      "fill": "#FFFFFF",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#E5E5EA"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#00000022",
+        "offset": {
+          "x": 0,
+          "y": 6
+        },
+        "blur": 20
+      },
+      "padding": [
+        14,
+        16
+      ],
+      "layout": "horizontal",
+      "gap": 14,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "toastMascot",
+          "cornerRadius": 8,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/chef-mascot-success.png",
+            "mode": "fit"
+          },
+          "width": 72,
+          "height": 80
+        },
+        {
+          "type": "frame",
+          "id": "toastTextCol",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "toastTitle",
+              "fill": "$color.text",
+              "content": "저장했어요",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "toastSub",
+              "fill": "$color.textMuted",
+              "content": "짧은 스프라이트(기쁨) 또는 idle↔성공 2컷 — demo.html",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color.bg": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.text": {
+      "type": "color",
+      "value": "#1C1C1E"
+    },
+    "color.textMuted": {
+      "type": "color",
+      "value": "#8E8E93"
+    },
+    "color.textDayEmpty": {
+      "type": "color",
+      "value": "#AEAEB2"
+    },
+    "color.badge": {
+      "type": "color",
+      "value": "#E53935"
+    },
+    "color.surface": {
+      "type": "color",
+      "value": "#F2F2F7"
+    },
+    "color.padCell": {
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    "radius.sm": {
+      "type": "number",
+      "value": 4
+    },
+    "radius.md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius.pill": {
+      "type": "number",
+      "value": 12
+    },
+    "text.title": {
+      "type": "number",
+      "value": 28
+    },
+    "text.month": {
+      "type": "number",
+      "value": 16
+    },
+    "text.body": {
+      "type": "number",
+      "value": 15
+    },
+    "text.caption": {
+      "type": "number",
+      "value": 11
+    },
+    "text.dayNum": {
+      "type": "number",
+      "value": 14
+    },
+    "space.screenPad": {
+      "type": "number",
+      "value": 15
+    },
+    "touch.min": {
+      "type": "number",
+      "value": 44
+    }
+  }
+}

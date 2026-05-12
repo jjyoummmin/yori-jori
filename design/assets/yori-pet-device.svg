@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 120" width="96" height="120" shape-rendering="crispEdges">
+  <title>Generic pixel handheld frame (original)</title>
+  <desc>Symmetric toy shell with screen cutout; inspired by retro handhelds, not a copy of any branded device silhouette.</desc>
+  <!-- shell -->
+  <rect x="12" y="8" width="72" height="96" rx="0" fill="#E85D4C"/>
+  <rect x="14" y="10" width="68" height="92" fill="#FF7B6B"/>
+  <rect x="16" y="12" width="64" height="88" fill="#FFB3A7"/>
+  <!-- inner bezel -->
+  <rect x="22" y="22" width="52" height="52" fill="#3D2914"/>
+  <!-- LCD area -->
+  <rect x="24" y="24" width="48" height="48" fill="#C8E6C9"/>
+  <rect x="24" y="24" width="48" height="48" fill="none" stroke="#2E4A32" stroke-width="2"/>
+  <!-- buttons -->
+  <rect x="28" y="84" width="14" height="8" fill="#5D4037"/>
+  <rect x="54" y="84" width="14" height="8" fill="#5D4037"/>
+  <rect x="42" y="98" width="12" height="6" fill="#5D4037"/>
+</svg>
